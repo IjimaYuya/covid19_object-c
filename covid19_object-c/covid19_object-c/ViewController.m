@@ -33,4 +33,11 @@
     return  5;
 }
 
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    return 5;
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
+    return [NSString stringWithFormat:@"sectionPath:%ld", section];
+}
 @end
